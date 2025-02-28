@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>舒尔特网格</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="controls">
+        <label for="grid-size">网格大小:</label>
+        <input type="number" id="grid-size" min="3" max="10" value="5">
+        <button id="generate-grid">生成网格</button>
+        <label for="bg-color">背景颜色:</label>
+        <input type="color" id="bg-color" value="#f0f0f0">
+        <label for="cell-color">方格颜色:</label>
+        <input type="color" id="cell-color" value="#4CAF50">
+        <label for="highlight-color">高亮颜色:</label>
+        <input type="color" id="highlight-color" value="#45a049">
+        <button id="move-up">上</button>
+        <button id="move-down">下</button>
+        <button id="move-left">左</button>
+        <button id="move-right">右</button>
+    </div>
+    <div id="grid-container"></div>
+    <div id="stats">
+        <p>时间: <span id="timer">00:00:000</span></p>
+        <p>错误次数: <span id="error-count">0</span></p>
+        <p id="start-hint">按下数字 <strong>1</strong> 开始计时</p>
+    </div>
+    <div id="rankings">
+        <h2>完成时间排名</h2>
+        <ul id="rankings-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
